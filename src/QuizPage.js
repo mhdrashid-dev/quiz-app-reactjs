@@ -8,7 +8,7 @@ function QuizPage() {
     <div>
       {/* <StartingPage></StartingPage> */}
       {/* <SetupPage></SetupPage> */}
-      <QuestionPage></QuestionPage>
+      {/* <QuestionPage></QuestionPage> */}
     </div>
   )
 }
