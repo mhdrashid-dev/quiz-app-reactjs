@@ -1,7 +1,19 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Logo from '../Images/quiz.png'
+import { useNavigate } from 'react-router-dom'
 
 function StartingPage() {
+
+  let navigate=useNavigate();
+
+  let LoadSetupPage=()=>{
+    navigate('/setup');
+  }
+
+  useEffect(()=>{
+    setTimeout(LoadSetupPage,2000)
+  },[])
+
   return (
     <div className='bw-full h-screen bg-[rgba(12,18,33)]'>      
       <div className="container w-full h-full mx-auto flex flex-col justify-center items-center">

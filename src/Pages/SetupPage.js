@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function SetupPage() {
   
@@ -7,6 +8,7 @@ function SetupPage() {
   let [modeValue,setModeValue]=useState('Easy');
   let [modeActive,setModeActive]=useState(false);
   let [limit,setLimit]=useState(10);
+  let navigate=useNavigate();
 
   let setUserCategory=(e)=>{
     setCategoryValue(e);
@@ -17,6 +19,10 @@ function SetupPage() {
     setModeValue(e);
     setCategoryActive(false);
     setModeActive(false)
+  }
+
+  let LoadingQuestionPage=()=>{
+    navigate('/question');
   }
 
 
@@ -64,7 +70,7 @@ function SetupPage() {
             </form>
           </div>
           <div className="start-btn-sec">
-            <button className='bg-[rgba(55,175,229)] px-5 py-1 rounded-md text-white font-semibold'>Start To Quiz</button>
+            <button className='bg-[rgba(55,175,229)] px-5 py-1 rounded-md text-white font-semibold' onClick={LoadingQuestionPage} >Start To Quiz</button>
           </div>
         </div>
         
