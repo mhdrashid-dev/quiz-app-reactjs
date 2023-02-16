@@ -1,4 +1,5 @@
 import React from 'react'
+import Loading from './Components/Loading'
 import QuestionPage from './Pages/QuestionPage'
 import Result from './Pages/Result'
 import SetupPage from './Pages/SetupPage'
@@ -10,7 +11,8 @@ function QuizPage() {
       {/* <StartingPage></StartingPage> */}
       {/* <SetupPage></SetupPage> */}
       {/* <QuestionPage></QuestionPage> */}
-      <Result></Result>
+      {/* <Result></Result> */}
+      <Loading></Loading>
     </div>
   )
 }
