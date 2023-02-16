@@ -8,10 +8,10 @@ import StartingPage from './Pages/StartingPage'
 function QuizPage() {
   return (
     <div>
-      {/* <StartingPage></StartingPage> */}
-      {/* <SetupPage></SetupPage> */}
-      {/* <QuestionPage></QuestionPage> */}
-      {/* <Result></Result> */}
+      <StartingPage></StartingPage>
+      <SetupPage></SetupPage>
+      <QuestionPage></QuestionPage>
+      <Result></Result>
       <Loading></Loading>
     </div>
   )
