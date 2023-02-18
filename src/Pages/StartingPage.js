@@ -6,13 +6,19 @@ function StartingPage() {
 
   let navigate=useNavigate();
 
+ 
+
+
   let LoadSetupPage=()=>{
     navigate('/setup');
   }
 
   useEffect(()=>{
     setTimeout(LoadSetupPage,2000)
-  },[])
+    window.addEventListener('load',()=>{
+      navigate('/')
+    })
+  },[])  
 
   return (
     <div className='bw-full h-screen bg-[rgba(12,18,33)]'>      
